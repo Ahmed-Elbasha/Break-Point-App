@@ -91,18 +91,90 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="M3B-t6-HjR">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginBGImage" translatesAutoresizingMaskIntoConstraints="NO" id="M3B-t6-HjR">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="337"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="337" id="0T0-cU-JBd"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_breakpoint" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="45A-nN-eQI">
+                                <rect key="frame" x="45" y="50" width="285" height="28"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="24"/>
+                                <color key="textColor" red="0.5607843137254902" green="0.81176470588235294" blue="0.68235294117647061" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KBh-rh-bmt">
+                                <rect key="frame" x="20" y="161" width="335" height="345"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="sMj-Wp-RhL">
+                                        <rect key="frame" x="20" y="20" width="295" height="252"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nZN-MP-zFQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="295" height="55.5"/>
+                                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
+                                                <color key="textColor" red="0.015686274509803921" green="0.6705882352941176" blue="0.77254901960784317" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l8b-5b-ukG">
+                                                <rect key="frame" x="0.0" y="65.5" width="295" height="55.5"/>
+                                                <color key="backgroundColor" red="0.2627450980392157" green="0.34509803921568627" blue="0.56862745098039214" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
+                                                <state key="normal" title="LOGIN FACEBOOK">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hDh-pq-Ywf">
+                                                <rect key="frame" x="0.0" y="131" width="295" height="55.5"/>
+                                                <color key="backgroundColor" red="0.8666666666666667" green="0.29411764705882354" blue="0.22352941176470587" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
+                                                <state key="normal" title="LOGIN G+">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="laJ-Sa-lMA">
+                                                <rect key="frame" x="0.0" y="196.5" width="295" height="55.5"/>
+                                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
+                                                <color key="textColor" red="0.015686274509803921" green="0.6705882352941176" blue="0.77254901960784317" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QLC-Zj-yp7">
+                                        <rect key="frame" x="20" y="272" width="295" height="53"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="53" id="WrP-dh-vc7"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="14"/>
+                                        <state key="normal" title=" by email" image="emailIcon">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.25490196078431371" green="0.27058823529411763" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="sMj-Wp-RhL" firstAttribute="leading" secondItem="KBh-rh-bmt" secondAttribute="leading" constant="20" id="1C3-xO-RjX"/>
+                                    <constraint firstItem="sMj-Wp-RhL" firstAttribute="top" secondItem="KBh-rh-bmt" secondAttribute="top" constant="20" id="E0f-IG-mJ9"/>
+                                    <constraint firstAttribute="height" constant="345" id="ExZ-r2-DBd"/>
+                                    <constraint firstAttribute="trailing" secondItem="sMj-Wp-RhL" secondAttribute="trailing" constant="20" id="Jde-eD-eFn"/>
+                                    <constraint firstAttribute="trailing" secondItem="QLC-Zj-yp7" secondAttribute="trailing" constant="20" id="gSF-3P-oQx"/>
+                                    <constraint firstItem="QLC-Zj-yp7" firstAttribute="top" secondItem="sMj-Wp-RhL" secondAttribute="bottom" id="gYs-vN-Hef"/>
+                                    <constraint firstItem="QLC-Zj-yp7" firstAttribute="leading" secondItem="KBh-rh-bmt" secondAttribute="leading" constant="20" id="mo2-rq-rPd"/>
+                                    <constraint firstAttribute="bottom" secondItem="QLC-Zj-yp7" secondAttribute="bottom" constant="20" id="tUq-1K-UXw"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.16078431372549018" green="0.15686274509803921" blue="0.20392156862745098" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="45A-nN-eQI" firstAttribute="leading" secondItem="AcY-8e-1mg" secondAttribute="leading" constant="45" id="2cf-Dw-bWO"/>
                             <constraint firstItem="M3B-t6-HjR" firstAttribute="trailing" secondItem="AcY-8e-1mg" secondAttribute="trailing" id="RQi-Xa-7tM"/>
+                            <constraint firstItem="KBh-rh-bmt" firstAttribute="centerX" secondItem="gy5-c0-gj9" secondAttribute="centerX" id="a34-vw-EPY"/>
+                            <constraint firstItem="AcY-8e-1mg" firstAttribute="trailing" secondItem="45A-nN-eQI" secondAttribute="trailing" constant="45" id="cIh-4d-uVM"/>
+                            <constraint firstItem="KBh-rh-bmt" firstAttribute="leading" secondItem="AcY-8e-1mg" secondAttribute="leading" constant="20" id="eUe-aK-5yj"/>
                             <constraint firstItem="M3B-t6-HjR" firstAttribute="leading" secondItem="AcY-8e-1mg" secondAttribute="leading" id="ji1-e5-ie9"/>
                             <constraint firstItem="M3B-t6-HjR" firstAttribute="top" secondItem="gy5-c0-gj9" secondAttribute="top" id="ob2-NH-5C5"/>
+                            <constraint firstItem="AcY-8e-1mg" firstAttribute="trailing" secondItem="KBh-rh-bmt" secondAttribute="trailing" constant="20" id="uAF-aa-lSH"/>
+                            <constraint firstItem="45A-nN-eQI" firstAttribute="top" secondItem="AcY-8e-1mg" secondAttribute="top" constant="30" id="xRG-ea-1IM"/>
+                            <constraint firstItem="KBh-rh-bmt" firstAttribute="centerY" secondItem="gy5-c0-gj9" secondAttribute="centerY" id="y5r-83-R6K"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="AcY-8e-1mg"/>
                     </view>
@@ -131,7 +203,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="emailIcon" width="25" height="16"/>
         <image name="first" width="30" height="30"/>
+        <image name="loginBGImage" width="375" height="284"/>
         <image name="second" width="30" height="30"/>
     </resources>
 </document>

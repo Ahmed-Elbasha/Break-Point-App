@@ -117,7 +117,7 @@
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l8b-5b-ukG">
                                                 <rect key="frame" x="0.0" y="65.5" width="295" height="55.5"/>
-                                                <color key="backgroundColor" red="0.2627450980392157" green="0.34509803921568627" blue="0.56862745098039214" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.23137254901960785" green="0.34901960784313724" blue="0.59607843137254901" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
                                                 <state key="normal" title="LOGIN FACEBOOK">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

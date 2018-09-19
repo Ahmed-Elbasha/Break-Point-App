@@ -19,6 +19,7 @@
 		7E35B0CB213D786C00622CA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E35B0C9213D786C00622CA0 /* LaunchScreen.storyboard */; };
 		7E35B0D8213D91ED00622CA0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E35B0D7213D91ED00622CA0 /* GoogleService-Info.plist */; };
 		7E911AF4214148990057B2FC /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E911AF3214148990057B2FC /* DataService.swift */; };
+		7E94E1972151B5040007EE2A /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E94E1962151B5040007EE2A /* AuthService.swift */; };
 		B2372E5653C4B11220EA3FEE /* libPods-BreakPoint.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4979300ADC3F010DB5FEE8D /* libPods-BreakPoint.a */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		7E35B0CC213D786C00622CA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E35B0D7213D91ED00622CA0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7E911AF3214148990057B2FC /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		7E94E1962151B5040007EE2A /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		A4979300ADC3F010DB5FEE8D /* libPods-BreakPoint.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BreakPoint.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7DD62C4FA2A1AED49DBFF1F /* Pods-BreakPoint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BreakPoint.release.xcconfig"; path = "Pods/Target Support Files/Pods-BreakPoint/Pods-BreakPoint.release.xcconfig"; sourceTree = "<group>"; };
 		F0CE1BF4C7248F53E6C86048 /* Pods-BreakPoint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BreakPoint.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BreakPoint/Pods-BreakPoint.debug.xcconfig"; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				7E911AF3214148990057B2FC /* DataService.swift */,
+				7E94E1962151B5040007EE2A /* AuthService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 				7E249AE8214FE49200390B97 /* LoginViewController.swift in Sources */,
 				7E35B0C3213D786600622CA0 /* SecondViewController.swift in Sources */,
 				7E35B0BF213D786600622CA0 /* AppDelegate.swift in Sources */,
+				7E94E1972151B5040007EE2A /* AuthService.swift in Sources */,
 				7E249AE6214FE43000390B97 /* AuthenticationViewController.swift in Sources */,
 				7E249AEC2150482E00390B97 /* ShadowView.swift in Sources */,
 				7E35B0C1213D786600622CA0 /* FirstViewController.swift in Sources */,

@@ -16,15 +16,14 @@ class AuthenticationViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func signInByEmailButtonWasPressed(_ sender: Any) {
+        let loginVC = storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+        self.present(loginVC, animated: true, completion: nil)
     }
-    */
-
+    
+    @IBAction func signInWithFacebookButtonWasPressed(_ sender: Any) {
+    }
+    
+    @IBAction func signInWithGoogleButtonWasPressed(_ sender: Any) {
+    }
 }

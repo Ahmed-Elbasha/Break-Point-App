@@ -18,6 +18,7 @@
 		7E35B0C8213D786C00622CA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E35B0C7213D786C00622CA0 /* Assets.xcassets */; };
 		7E35B0CB213D786C00622CA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E35B0C9213D786C00622CA0 /* LaunchScreen.storyboard */; };
 		7E35B0D8213D91ED00622CA0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E35B0D7213D91ED00622CA0 /* GoogleService-Info.plist */; };
+		7E8238152158584000D36BB7 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8238142158584000D36BB7 /* MeViewController.swift */; };
 		7E911AF4214148990057B2FC /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E911AF3214148990057B2FC /* DataService.swift */; };
 		7E94E1972151B5040007EE2A /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E94E1962151B5040007EE2A /* AuthService.swift */; };
 		7EC086A221558FEE0010DA68 /* LoginVCUITextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC086A121558FEE0010DA68 /* LoginVCUITextFieldDelegate.swift */; };
@@ -38,6 +39,7 @@
 		7E35B0CA213D786C00622CA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E35B0CC213D786C00622CA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E35B0D7213D91ED00622CA0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7E8238142158584000D36BB7 /* MeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
 		7E911AF3214148990057B2FC /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		7E94E1962151B5040007EE2A /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		7EC086A121558FEE0010DA68 /* LoginVCUITextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVCUITextFieldDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				7E35B0C2213D786600622CA0 /* GroupsViewController.swift */,
 				7E249AE5214FE43000390B97 /* AuthenticationViewController.swift */,
 				7E249AE7214FE49200390B97 /* LoginViewController.swift */,
+				7E8238142158584000D36BB7 /* MeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E249AE8214FE49200390B97 /* LoginViewController.swift in Sources */,
+				7E8238152158584000D36BB7 /* MeViewController.swift in Sources */,
 				7E35B0C3213D786600622CA0 /* GroupsViewController.swift in Sources */,
 				7E35B0BF213D786600622CA0 /* AppDelegate.swift in Sources */,
 				7E94E1972151B5040007EE2A /* AuthService.swift in Sources */,

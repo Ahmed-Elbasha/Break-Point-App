@@ -41,6 +41,9 @@
                                             <constraint firstAttribute="height" constant="30" id="bJq-YT-wUi"/>
                                         </constraints>
                                         <state key="normal" image="compose"/>
+                                        <connections>
+                                            <segue destination="dKu-m3-Z7g" kind="presentation" id="Nkt-DL-7sd"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="_feed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N9n-es-Unm">
                                         <rect key="frame" x="78" y="33" width="220" height="27"/>
@@ -81,10 +84,10 @@
             </objects>
             <point key="canvasLocation" x="749.60000000000002" y="-320.68965517241384"/>
         </scene>
-        <!--View Controller-->
+        <!--Create Post View Controller-->
         <scene sceneID="O1o-kM-orE">
             <objects>
-                <viewController id="dKu-m3-Z7g" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CreatePostViewController" id="dKu-m3-Z7g" customClass="CreatePostViewController" customModule="BreakPoint" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sd5-5X-9bk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -110,6 +113,7 @@
                                         </constraints>
                                         <state key="normal" image="close"/>
                                         <connections>
+                                            <action selector="closeButtonWasPressed:" destination="dKu-m3-Z7g" eventType="touchUpInside" id="dbU-Y5-9D9"/>
                                             <action selector="signOutButtonWasPressed:" destination="tmg-Zs-a34" eventType="touchUpInside" id="uVM-B6-jJv"/>
                                         </connections>
                                     </button>
@@ -133,6 +137,9 @@
                                 <state key="normal" title="  SEND" image="send">
                                     <color key="titleColor" red="0.42699927091598511" green="0.74078899621963501" blue="0.38816779851913452" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="sendButtonWasPressed:" destination="dKu-m3-Z7g" eventType="touchUpInside" id="2N4-Tf-Ekp"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="l5U-s1-c0G">
                                 <rect key="frame" x="20" y="110" width="60" height="60"/>
@@ -178,6 +185,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1BD-K9-gBX"/>
                     </view>
+                    <connections>
+                        <outlet property="profileImageImageView" destination="l5U-s1-c0G" id="qg5-N6-nO5"/>
+                        <outlet property="sendButton" destination="VqS-zA-1Xq" id="peq-9Z-cdw"/>
+                        <outlet property="textView" destination="TnM-SI-g6r" id="Pwr-2w-hnK"/>
+                        <outlet property="userLabel" destination="Rlp-Bs-z2p" id="hnJ-5z-bz9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IiF-Z0-ekT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

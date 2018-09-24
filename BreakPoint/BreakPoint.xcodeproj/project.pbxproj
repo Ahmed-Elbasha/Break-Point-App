@@ -20,6 +20,8 @@
 		7E35B0D8213D91ED00622CA0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E35B0D7213D91ED00622CA0 /* GoogleService-Info.plist */; };
 		7E8238152158584000D36BB7 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8238142158584000D36BB7 /* MeViewController.swift */; };
 		7E911AF4214148990057B2FC /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E911AF3214148990057B2FC /* DataService.swift */; };
+		7E916ED121598714003E1995 /* CreatePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E916ED021598714003E1995 /* CreatePostViewController.swift */; };
+		7E916ED421598A63003E1995 /* CreatePostVCUITextViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E916ED321598A63003E1995 /* CreatePostVCUITextViewDelegate.swift */; };
 		7E94E1972151B5040007EE2A /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E94E1962151B5040007EE2A /* AuthService.swift */; };
 		7EC086A221558FEE0010DA68 /* LoginVCUITextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC086A121558FEE0010DA68 /* LoginVCUITextFieldDelegate.swift */; };
 		B2372E5653C4B11220EA3FEE /* libPods-BreakPoint.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4979300ADC3F010DB5FEE8D /* libPods-BreakPoint.a */; };
@@ -41,6 +43,8 @@
 		7E35B0D7213D91ED00622CA0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7E8238142158584000D36BB7 /* MeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
 		7E911AF3214148990057B2FC /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		7E916ED021598714003E1995 /* CreatePostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostViewController.swift; sourceTree = "<group>"; };
+		7E916ED321598A63003E1995 /* CreatePostVCUITextViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostVCUITextViewDelegate.swift; sourceTree = "<group>"; };
 		7E94E1962151B5040007EE2A /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		7EC086A121558FEE0010DA68 /* LoginVCUITextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVCUITextFieldDelegate.swift; sourceTree = "<group>"; };
 		A4979300ADC3F010DB5FEE8D /* libPods-BreakPoint.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BreakPoint.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,6 +118,7 @@
 				7E249AE5214FE43000390B97 /* AuthenticationViewController.swift */,
 				7E249AE7214FE49200390B97 /* LoginViewController.swift */,
 				7E8238142158584000D36BB7 /* MeViewController.swift */,
+				7E916ED021598714003E1995 /* CreatePostViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -150,9 +155,18 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		7E916ED221598A35003E1995 /* CreatePostViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7E916ED321598A63003E1995 /* CreatePostVCUITextViewDelegate.swift */,
+			);
+			path = CreatePostViewController;
+			sourceTree = "<group>";
+		};
 		7EC0869F21558F850010DA68 /* Delegate */ = {
 			isa = PBXGroup;
 			children = (
+				7E916ED221598A35003E1995 /* CreatePostViewController */,
 				7EC086A021558FAE0010DA68 /* LoginViewController */,
 			);
 			path = Delegate;
@@ -270,6 +284,7 @@
 			files = (
 				7E249AE8214FE49200390B97 /* LoginViewController.swift in Sources */,
 				7E8238152158584000D36BB7 /* MeViewController.swift in Sources */,
+				7E916ED421598A63003E1995 /* CreatePostVCUITextViewDelegate.swift in Sources */,
 				7E35B0C3213D786600622CA0 /* GroupsViewController.swift in Sources */,
 				7E35B0BF213D786600622CA0 /* AppDelegate.swift in Sources */,
 				7E94E1972151B5040007EE2A /* AuthService.swift in Sources */,
@@ -278,6 +293,7 @@
 				7E35B0C1213D786600622CA0 /* FeedViewController.swift in Sources */,
 				7E249AEA214FEBF800390B97 /* InsetTextField.swift in Sources */,
 				7EC086A221558FEE0010DA68 /* LoginVCUITextFieldDelegate.swift in Sources */,
+				7E916ED121598714003E1995 /* CreatePostViewController.swift in Sources */,
 				7E911AF4214148990057B2FC /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
